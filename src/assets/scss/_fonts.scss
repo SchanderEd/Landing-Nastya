@@ -1,0 +1,26 @@
+@mixin fonts($font-family, $srcWoff, $fw, $fd, $fs) {
+  @font-face {
+    font-family: $font-family;
+    src: $srcWoff;
+    font-weight: $fw;
+    font-display: $fd;
+    font-style: $fs;
+  }
+}
+
+@include fonts('NewLetterGothic', url(../fonts/NewLetterGothicC.ttf), 400, swap, normal); // Regular
+@include fonts('NewLetterGothicItalic', url(../fonts/NewLetterGothicC-Italic.woff), 400, swap, normal); // Italic
+@include fonts('NewLetterGothic', url(../fonts/NewLetterGothicC-BoldItalic.woff), 700, swap, normal); // Bold
+
+@include fonts('Cormorant', url(../fonts/CormorantSC-Regular.ttf), 400, swap, normal); // Regular
+@include fonts('Cormorant', url(../fonts/CormorantSC-Medium.ttf), 500, swap, normal); // Medium
+
+@include fonts('Montserrat', url(../fonts/Montserrat-Regular.ttf), 400, swap, normal); // Regular
+@include fonts('MontserratItalic', url(../fonts/Montserrat-Italic.ttf), 400, swap, normal); // Italic
+
+@include fonts('Inter', url(../fonts/Inter-Regular.ttf), 400, swap, normal); // Regular
+@include fonts('Inter', url(../fonts/Inter-Medium.ttf), 500, swap, normal); // Medium
+
+body {
+  font-family: 'NewLetterGothic', sans-serif;
+}

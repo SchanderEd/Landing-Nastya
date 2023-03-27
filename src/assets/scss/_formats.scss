@@ -1,0 +1,111 @@
+.formats {
+  position: relative;
+  padding-top: 188px;
+  padding-bottom: 182px;
+  background-color: $bodyBg;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 15%;
+    background: url(../images/formatsLineTop.svg);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 73%;
+    background: url(../images/formatsLineBottom.svg);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &__quote {
+    position: relative;
+    display: inline-block;
+    max-width: 966px;
+    text-align: center;
+    padding: 25px;
+    font-family: "Cormorant";
+    font-style: italic;
+    font-size: 38px;
+    line-height: 48px;
+    border: 2px solid $borderColor;
+    border-radius: 50px;
+    color: $formatQuote;
+    background-color: $bodyBg;
+  }
+
+  &__quote-top {
+    margin-bottom: 160px;
+  }
+
+  &__heading {
+    margin-bottom: 130px;
+    @extend %sectionHeading;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 692px;
+    flex: 1 32%;
+    margin-right: 112px;
+    margin-bottom: 112px;
+    padding: 60px 20px 60px 59px;
+    min-height: 360px;
+    border-radius: 50px;
+    background-color: $formatCard;
+  }
+
+  &__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__card-heading {
+    margin-bottom: 28px;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Cormorant';
+  }
+
+  &__price {
+    font-size: 32px;
+  }
+
+  &__write-me {
+    position: absolute;
+    width: 188px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    right: 40px;
+    bottom: 60px;
+  }
+
+  &__svg {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+.quote-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}

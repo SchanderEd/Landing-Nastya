@@ -1,0 +1,51 @@
+.nav {
+  &__item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  &__link {
+    position: relative;
+    font-family: 'Cormorant';
+    font-size: 48px;
+    color: $navLink;
+    z-index: 1;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .3s;
+  }
+
+  &__link:focus {
+    outline: none;
+    border-bottom: 2px solid $navLink;
+  }
+
+  &__link:hover {
+    border-bottom: 2px solid $navLink;
+  }
+}
+
+.navbar-toggler {
+  color: transparent;
+}
+
+.burger-btn:focus {
+  outline: auto;
+}
+
+.navbar>.container-fluid {
+  justify-content: end;
+}
+
+.fixed-top {
+  top: 15px;
+  right: 30px;
+}
+
+.navbar-toggler-icon {
+  width: 3.5em;
+  height: 3.5em;
+  background-image: url(../images/hamburger.png);
+}
+
+.offcanvas-header {
+  justify-content: end;
+}

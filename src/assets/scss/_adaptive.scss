@@ -1,0 +1,264 @@
+@media (max-width: 1254px) {
+  .hero {
+    &__container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__heading {
+      margin-bottom: 70px;
+    }
+
+    &__description {
+      margin-bottom: 20%;
+    }
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .fixed-top {
+    top: -10px;
+  }
+
+  .hero-heading {
+    font-size: 68px;
+  }
+
+  .hero {
+    &__heading-nastya {
+      text-align: end;
+    }
+  }
+
+  .formats {
+    &__list {
+      padding-left: 20px;
+    }
+
+    &__item {
+      max-width: 100%;
+      flex: 1 50%;
+      margin-right: 30px;
+    }
+
+    &__item:nth-child(2n) {
+      margin-right: 30px;
+    }
+  
+    &__item:last-child {
+      margin-right: 30px;
+    }
+  }
+
+  .lessons {
+    margin-bottom: 103px;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__heading {
+      font-size: 32px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    &__left {
+      margin-bottom: 40px;
+    }
+
+    &__video {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .nav {
+    &__link {
+      font-size: 20px;
+    }
+  }
+
+  .offcanvas {
+    max-width: 50%;
+  }
+
+  .hero-heading {
+    font-size: 32px;
+  }
+
+  .write-me-btn {
+    font-size: 16px;
+  }
+
+  .fixed-top {
+    right: 0;
+  }
+
+  .hero {
+    padding-top: 28px;
+
+    &__heading {
+      margin-bottom: 30px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    &__me {
+      margin-bottom: 22px;
+    }
+
+    &__description {
+      font-size: 20px;
+    }
+
+    &__right {
+      margin-bottom: 15px;
+    }
+  }
+
+  .about-me {
+    position: relative;
+
+    &__heading {
+      width: 100%;
+      margin-bottom: 22px;
+      font-size: 40px;
+    }
+
+    &__top,
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__top {
+      margin-bottom: 103px;
+    }
+
+    &__description {
+      font-size: 18px;
+    }
+
+    &__write-me {
+      position: absolute;
+      bottom: 25px;
+    }
+  }
+
+  .formats {
+    padding-top: 74px;
+
+    &__heading {
+      margin-bottom: 74px;
+      font-size: 40px;
+    }
+
+    &__quote {
+      font-size: 25px;
+    }
+
+    &__quote-top {
+      margin-bottom: 74px;
+    }
+
+    &__list {
+      margin-bottom: 74px;
+    }
+
+    &__item {
+      padding-left: 30px;
+    }
+
+    &__card-heading {
+      max-width: 214px;
+      font-size: 24px;
+    }
+
+    &__price {
+      font-size: 20px;
+    }
+
+    &__write-me {
+      bottom: 25px;
+      font-size: 14px;
+    }
+  }
+
+  .success {
+    padding-top: 74px;
+
+    &__heading {
+      font-size: 40px;
+      margin-bottom: 74px;
+    }
+
+    &__description {
+      font-size: 14px;
+    }
+
+    &__item {
+      min-height: 357px;
+    }
+  }
+
+  .footer {
+    padding-top: 74px;
+
+    &__heading {
+      font-size: 40px;
+    }
+
+    &__form {
+      flex-direction: column;
+      margin-bottom: 103px;
+    }
+
+    &__form-input {
+      margin-bottom: 15px;
+      height: 64px;
+    }
+
+    &__form-btn {
+      width: 100%;
+    }
+
+    &__bottom {
+      align-items: center;
+    }
+
+    &__social-link {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__hero-heading {
+      text-align: center;
+    }
+
+    &__social-item:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .success {
+    &__item {
+      min-height: 400px;
+    }
+  }
+}

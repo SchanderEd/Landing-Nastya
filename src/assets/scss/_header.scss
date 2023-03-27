@@ -1,0 +1,17 @@
+.header {
+  background-color: $bodyBg;
+
+  &__container {
+    max-width: 1670px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn-burger {
+    position: relative;
+    height: 34px;
+    background-color: transparent;
+    z-index: 5;
+  }
+}
